@@ -2,6 +2,7 @@ package com.example.loop_lab.hetrogeniouslayout;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.helper.ItemTouchHelper;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,7 +10,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import java.util.ArrayList;
 
-public class ComplexAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
+public class ComplexAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>  {
     private final int SPINNER = 0, TEXT_VIEW = 1;
     private ArrayList<Integer> arrayList = new ArrayList<>();
     private Context context;
@@ -71,8 +72,8 @@ public class ComplexAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
                 configureViewHolder2(vh2,position);
                 break;
             default:
-                SpineerViewHolder vh3 = (SpineerViewHolder) viewHolder;
-                configureViewHolder1(vh3,position);
+//                SpineerViewHolder vh3 = (SpineerViewHolder) viewHolder;
+  //              configureViewHolder1(vh3,position);
                 break;
         }
     }
